@@ -26,25 +26,24 @@ In this project, we used the Deep Deterministic Policy Gradients ([DDPG](https:/
 | Trial | # of Episodes to Solve | Description | Comments |
 | ------------- | ------------- | ------------- | ------------- |
 | Initial Run | 518 | Default params with tau 1e-2, batch size 128, and critic LR 1e-3 | Baseline [Reacher] code with a change to tau |
-| Trial 1 | Interrupted after 3500 | Tau 1e-3 | Not solved |
-| Trial 2 | 820 | Tau 1e-1 | Better than Initial Run |
-| Trial 3 | Interrupted after 1900 | Tau 5e-1 | Close to solving but not better than Initial Run and Trial 2 |
-| Trial 4 | 534 | Tau 3e-1 | Best results thus far |
-| Trial 5 | Interrupted after 1700 | Tau 4e-1 | Not that close to solving |
-| Trial 6 | 601 | Tau 2e-1 | Not better than Trial 4 |
-| Trial 7 | 702 | Tau 3e-1 and batch size 256 | Not better than Trial 4 |
-| Trial 8 | 564 | Tau 3e-1 and batch size 512 | Not better than Trial 4 |
-| Trial 9 | 571 | Tau 3e-1 and batch size 1024 | Not better than Trial 4 |
-| Trial 10 | Interrupted after 1000 | Tau 3e-1 and batch size 64 | Score did not reach 0.2 |
-| Trial 11 | Interrupted after 1000 episodes | Tau 3e-1 and batch size 128; actor LR 1e-3 | Plateaued at score 0.0 after episode 100 |
-| Trial 12 | Interrupted after 1800 episodes | Tau 3e-1 and batch size 128; actor LR 1e-2 and critic LR 1e-2 | Plateaued at score 0.0 after episode 100 |
-| Trial 13 | 457 | Tau 3e-1 and batch size 128; critic LR 1e-4 | Best results thus far, better than Trial 4 |
-| Trial 14 | Interrupted after 600 episodes | Tau 3e-1 and batch size 128; actor LR 5e-5 and critic LR 5e-5 | Not better than Trial 13 |
-| Final Run | 457 | Tau 3e-1 and batch size 128; critic LR 1e-4 | Verifying Trial 13 performs best |
+| Trial 1 | 840 | Tau 1e-3 | Not better than Initial Run|
+| Trial 2 | 666 | Tau 1e-1 | Better than Trial 1 but not better than Initial Run |
+| Trial 3 | 411 | Tau 5e-1 | Better than Trail 1 and Initial Run |
+| Trial 4 | 480 | Tau 3e-1 | Not better than Trial 3 |
+| Trial 5 | 536 | Tau 4e-1 | Not better than Trial 4 |
+| Trial 6 | 998 | Tau 2e-1 | Not better than Trial 5 |
+| Trial 7 | 728 | Tau 3e-1 and batch size 256 | better than Trial 6 but not better than Trial 3 |
+| Trial 8 | 335 | Tau 3e-1 and batch size 512 | Best results so far|
+| Trial 9 | 416 | Tau 3e-1 and batch size 1024 | Not better than Trial 8 |
+| Trial 10 | 596 | Tau 3e-1 and batch size 64 | Not better than Trial 9 |
+| Trial 11 | 611 | Tau 3e-1 and batch size 128; actor LR 1e-3 | PNot better than Trial 10 |
+| Trial 12 | 685 | Tau 3e-1 and batch size 128; actor LR 1e-2 and critic LR 1e-2 | Not better than Trial 11 |
+| Trial 13 | 868 | Tau 3e-1 and batch size 128; critic LR 1e-4 | Not better than Trial 12 |
+| Trial 14 | 391 | Tau 3e-1 and batch size 128; actor LR 5e-5 and critic LR 5e-5 | better than Trial 13 but not better than Trial 8 |
 
 ## Plot of Rewards
 
-The plot below shows that, after 457 episodes, the agent is able to receive an average reward of 0.5 over the last 100 consecutive episodes.
+The plot below shows that, after 335 episodes, the agent is able to receive an average reward of 0.5 over the last 100 consecutive episodes.
 
 ![final_model_rewards_plot](./final_model_rewards_plot.png)
 
