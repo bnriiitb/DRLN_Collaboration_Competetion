@@ -41,6 +41,8 @@ In this project, we used the Deep Deterministic Policy Gradients ([DDPG](https:/
 | Trial 13 | 868 | Tau 3e-1 and batch size 128; critic LR 1e-4 | Not better than Trial 12 |
 | Trial 14 | 391 | Tau 3e-1 and batch size 128; actor LR 5e-5 and critic LR 5e-5 | better than Trial 13 but not better than Trial 8 |
 
+I was able to obtain the best results in Trial 8 by setting paramets Tau 3e-1 and batch size 512 and was able to solve the environment in 335 episods.
+
 ## Plot of Rewards
 
 The plot below shows that, after 335 episodes, the agent is able to receive an average reward of 0.5 over the last 100 consecutive episodes.
