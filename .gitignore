@@ -1,0 +1,7 @@
+
+*.tif
+/Users/naga/GitHub/DRLN_Collaboration_Competetion/Tennis.app*
+Tennis.app/Contents/Resources/UnityPlayerIcon.png
+Tennis.app*
+checkpoints/trial_*
+*.pyc
